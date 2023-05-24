@@ -76,8 +76,8 @@ public class CalculatorActivity extends AppCompatActivity {
     private void add(){
         if (validateFields()){
             setCalculatorValues();
+            lblResult.setText(calculator.subtract());
         }
-
     }
 
     private void substract(){
