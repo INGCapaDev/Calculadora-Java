@@ -68,8 +68,15 @@ public class CalculatorActivity extends AppCompatActivity {
         return true;
     }
 
+    private void setCalculatorValues(){
+            calculator.setNum1(Integer.parseInt(txtNum1.getText().toString()));
+            calculator.setNum2(Integer.parseInt(txtNum2.getText().toString()));
+    }
+
     private void add(){
-    
+        if (validateFields()){
+            setCalculatorValues();
+        }
 
     }
 
