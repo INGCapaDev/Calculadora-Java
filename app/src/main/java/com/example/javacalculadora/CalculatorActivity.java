@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class CalculatorActivity extends AppCompatActivity {
@@ -59,7 +60,16 @@ public class CalculatorActivity extends AppCompatActivity {
         this.lblResult.setText("");
     }
 
+    private boolean validateFields(){
+        if (this.txtNum1.getText().toString().matches("") || this.txtNum2.getText().toString().matches("")){
+            Toast.makeText(CalculatorActivity.this, "Values Required", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
+    }
+
     private void add(){
+    
 
     }
 
