@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         String strUser = getResources().getString(R.string.user);
         String strPass = getResources().getString(R.string.pass);
 
-        if ((txtUser.getText().toString() == strUser) && (txtPass.getText().toString() == strPass)){
+        if ((txtUser.getText().toString().equals(strUser)) && (txtPass.getText().toString().equals(strPass))){
             Bundle bundle = new Bundle();
             bundle.putString("user", strUser);
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculadora</string>
+    <string name="app_name">Calculator</string>
     <string name="user">Alvaro</string>
     <string name="pass">12345</string>
     <string name="num1">0</string>
