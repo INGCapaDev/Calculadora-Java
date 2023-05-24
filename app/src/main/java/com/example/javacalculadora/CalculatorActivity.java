@@ -76,20 +76,29 @@ public class CalculatorActivity extends AppCompatActivity {
     private void add(){
         if (validateFields()){
             setCalculatorValues();
-            lblResult.setText(calculator.subtract());
+            lblResult.setText(calculator.add());
         }
     }
 
     private void substract(){
-
+        if (validateFields()){
+            setCalculatorValues();
+            lblResult.setText(calculator.subtract());
+        }
     }
 
     private void multiply(){
-
+        if (validateFields()){
+            setCalculatorValues();
+            lblResult.setText(calculator.multiply());
+        }
     }
 
     private void divide(){
-
+        if (validateFields()){
+            setCalculatorValues();
+            lblResult.setText(calculator.divide());
+        }
     }
 
 
