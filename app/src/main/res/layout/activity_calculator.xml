@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/txtNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/num1"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="#7690E1"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:autofillHints=""
+            android:id="@+id/txtNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/num2"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="#7690E1"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="16dp"
+            >
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="60dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strAdd"
+                android:layout_marginHorizontal="10dp"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnSubstract"
+                android:layout_width="60dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/strSubstract"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="60dp"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"
+
+                android:text="@string/strMultiply"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="60dp"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/strDivide"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="@string/strClear" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/strReturn" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

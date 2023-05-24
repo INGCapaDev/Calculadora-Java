@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="usuario">Alvaro</string>
+    <string name="contraseña">12345</string>
+    <string name="num1">0</string>
+    <string name="num2">0</string>
+    <string name="strAdd">+</string>
+    <string name="strSubstract">-</string>
+    <string name="strMultiply">*</string>
+    <string name="strDivide">/</string>
+    <string name="strClear">Clear</string>
+    <string name="strReturn">Return</string>
+
+</resources>
