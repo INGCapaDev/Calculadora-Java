@@ -23,14 +23,14 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtUsuario"
+            android:id="@+id/txtUser"
             android:textAlignment="center"
             android:hint="@string/user"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtContraseña"
+            android:id="@+id/txtPass"
             android:textAlignment="center"
             android:hint="@string/pass"/>
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:id="@+id/btnIngresar"
+            android:id="@+id/btnLogin"
             android:text="@string/enter"/>
 
         <Button
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:id="@+id/btnCerrar"
+            android:id="@+id/btnExit"
             android:text="@string/exit"/>
 
 
