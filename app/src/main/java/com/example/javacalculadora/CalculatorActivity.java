@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -29,6 +30,24 @@ public class CalculatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_calculator);
         initializeComponents();
 
+        btnAdd.setOnClickListener(v -> {
+            add();
+        });
+        btnSubstract.setOnClickListener(v -> {
+            substract();
+        });
+        btnDivide.setOnClickListener(v -> {
+            divide();
+        });
+        btnMultiply.setOnClickListener(v -> {
+            multiply();
+        });
+        btnClear.setOnClickListener(v -> {
+            clear();
+        });
+        btnReturn.setOnClickListener(v -> {
+            btnReturn();
+        });
 
     }
 
